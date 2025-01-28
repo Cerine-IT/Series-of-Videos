@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3ebe2; /* beige*/
+    background-color: #f3ebe2;
     color: #333;
     padding: 20px;
     line-height: 1.6;
@@ -18,12 +19,12 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #8c1a1a; /* Rouge-brun*/
+    font-size: 3rem;
+    color: #8c1a1a;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #555;
 }
 
@@ -35,7 +36,7 @@ header p {
 
 .video {
     background: #ffffff;
-    border: 2px solid #c99e62; /* couleur sable */
+    border: 2px solid #c99e62;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -49,26 +50,57 @@ header p {
 }
 
 video {
-    width: 100%; 
+    width: 100%;
     max-width: 700px;
     border-radius: 10px;
     margin: 10px 0;
 }
 
 .video-description p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #555;
     margin-top: 10px;
     line-height: 1.5;
 }
 
-/* effet */
 .video:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Ajouter une animation subtile */
 video:hover {
     outline: 2px solid #8c1a1a;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.social-media h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color:#8c1a1a;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #e1306c; 
+    transform: scale(1.2); 
 }
